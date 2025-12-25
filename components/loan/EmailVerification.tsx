@@ -107,7 +107,7 @@ export function EmailVerification({ onSuccess }: EmailVerificationProps) {
               {...register('email')}
               type="email"
               id="email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
               placeholder="your.email@example.com"
             />
             {errors.email && (
@@ -150,7 +150,7 @@ export function EmailVerification({ onSuccess }: EmailVerificationProps) {
                 const value = e.target.value.replace(/\D/g, '').slice(0, 6)
                 setOtp(value)
               }}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-center text-2xl tracking-widest"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-center text-2xl tracking-widest text-gray-900 placeholder:text-gray-400"
               placeholder="000000"
               maxLength={6}
             />

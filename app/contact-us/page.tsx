@@ -105,7 +105,7 @@ export default function ContactUs() {
                         {...register('name')}
                         type="text"
                         id="name"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
                         placeholder="Your Name"
                       />
                       {errors.name && (
@@ -121,7 +121,7 @@ export default function ContactUs() {
                         {...register('email')}
                         type="email"
                         id="email"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
                         placeholder="your.email@example.com"
                       />
                       {errors.email && (
@@ -138,7 +138,7 @@ export default function ContactUs() {
                       {...register('phone')}
                       type="tel"
                       id="phone"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
                       placeholder="9876543210"
                       maxLength={10}
                     />
@@ -155,7 +155,7 @@ export default function ContactUs() {
                       {...register('subject')}
                       type="text"
                       id="subject"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
                       placeholder="What is this regarding?"
                     />
                     {errors.subject && (
@@ -171,7 +171,7 @@ export default function ContactUs() {
                       {...register('message')}
                       id="message"
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all resize-none text-gray-900 placeholder:text-gray-400"
                       placeholder="Tell us how we can help you..."
                     />
                     {errors.message && (

@@ -66,7 +66,7 @@ export function ProfileSetup({ email, onSuccess }: ProfileSetupProps) {
               {...register('name')}
               type="text"
               id="name"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
               placeholder="John Doe"
             />
             {errors.name && (
@@ -82,7 +82,7 @@ export function ProfileSetup({ email, onSuccess }: ProfileSetupProps) {
               {...register('phoneNumber')}
               type="tel"
               id="phoneNumber"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
               placeholder="9876543210"
               maxLength={10}
             />
@@ -100,7 +100,7 @@ export function ProfileSetup({ email, onSuccess }: ProfileSetupProps) {
             {...register('jobDescription')}
             type="text"
             id="jobDescription"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
             placeholder="Software Engineer"
           />
           {errors.jobDescription && (
@@ -116,7 +116,7 @@ export function ProfileSetup({ email, onSuccess }: ProfileSetupProps) {
             {...register('jobLocation')}
             type="text"
             id="jobLocation"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
             placeholder="Mumbai, Maharashtra"
           />
           {errors.jobLocation && (
@@ -132,7 +132,7 @@ export function ProfileSetup({ email, onSuccess }: ProfileSetupProps) {
             {...register('address')}
             id="address"
             rows={3}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all resize-none"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all resize-none text-gray-900 placeholder:text-gray-400"
             placeholder="Complete residential address"
           />
           {errors.address && (
@@ -148,7 +148,7 @@ export function ProfileSetup({ email, onSuccess }: ProfileSetupProps) {
             {...register('salaryPerMonth')}
             type="text"
             id="salaryPerMonth"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all text-gray-900 placeholder:text-gray-400"
             placeholder="50000"
           />
           {errors.salaryPerMonth && (
