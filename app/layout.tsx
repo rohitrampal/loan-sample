@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   description: 'Get instant personal loans online with quick approval. No paperwork, transparent process, and trusted lending partners. Apply now for fast-track loans.',
   keywords: 'instant loan, personal loan, quick loan approval, online loan, fast loan, loan application',
   authors: [{ name: 'Instant Money' }],
+  icons: {
+    icon: '/fav_icon.webp',
+    shortcut: '/fav_icon.webp',
+    apple: '/fav_icon.webp',
+  },
   openGraph: {
     title: 'Instant Money - Fast Personal Loans Online',
     description: 'Get instant personal loans online with quick approval. No paperwork, transparent process.',

@@ -11,8 +11,11 @@ const transporter = nodemailer.createTransport({
 })
 
 export async function sendOTPEmail(email: string, otp: string) {
+  const fromEmail = process.env.SMTP_FROM || 'noreply@instantmoney.com'
+  const fromDisplayName = 'No Reply - Instant Money'
+  
   const mailOptions = {
-    from: process.env.SMTP_FROM || 'noreply@instantmoney.com',
+    from: `${fromDisplayName} <${fromEmail}>`,
     to: email,
     subject: 'Your OTP for Instant Money Loan Application',
     html: `
@@ -24,7 +27,7 @@ export async function sendOTPEmail(email: string, otp: string) {
         </head>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
           <div style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
-            <h1 style="color: white; margin: 0;">Instant Money</h1>
+            <h1 style="color: white; margin: 0;">No Reply - Instant Money</h1>
           </div>
           <div style="background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; border: 1px solid #e5e7eb;">
             <h2 style="color: #111827; margin-top: 0;">Email Verification</h2>
